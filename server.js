@@ -65,6 +65,12 @@ app.get("/projects", (req, res) => {
   });
 });
 
+app.get("/practice", (req, res) => {
+  res.render("practice.hbs", {
+    pageTitle: "Practice page"
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server is up on port ${port}`);
 });
